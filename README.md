@@ -1,48 +1,12 @@
-# \<lit-component1>
+# Example testing lit Web component
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+Using Cypress Component testing following [Cypress component tests for Lit Elements](https://dev.to/simonireilly/cypress-component-tests-for-lit-elements-web-components-45oj)
 
-## Installation
-
-```bash
-npm i lit-component1
+```
+$ yarn install
+$ yarn cypress open --component
 ```
 
-## Usage
+See [src/LitComponent1.cy.ts](./src/LitComponent1.cy.ts)
 
-```html
-<script type="module">
-  import 'lit-component1/lit-component1.js';
-</script>
-
-<lit-component1></lit-component1>
-```
-
-## Linting and formatting
-
-To scan the project for linting and formatting errors, run
-
-```bash
-npm run lint
-```
-
-To automatically fix linting and formatting errors, run
-
-```bash
-npm run format
-```
-
-
-## Tooling configs
-
-For most of the tools, the configuration is in the `package.json` to reduce the amount of files in your project.
-
-If you customize the configuration a lot, you can consider moving them to individual files.
-
-## Local Demo with `web-dev-server`
-
-```bash
-npm start
-```
-
-To run a local development server that serves the basic demo located in `demo/index.html`
+![Lit test](./images/lit-test.png)
